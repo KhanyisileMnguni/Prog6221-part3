@@ -5,9 +5,6 @@ using System.Text;
 
 namespace CyberChatBot
 {
-    /// <summary>
-    /// A single recorded action, with the time it occurred and a short description.
-    /// </summary>
     public class ActivityEntry
     {
         public DateTime Timestamp { get; set; }
@@ -20,9 +17,8 @@ namespace CyberChatBot
     }
 
     /// <summary>
-    /// Records every significant action the chatbot takes (tasks added,
-    /// reminders set, quiz attempts, NLP-recognised commands) so the user
-    /// can review a recent activity summary on request.
+    /// Records every significant action the chatbot takes (tasks added, reminders set, quiz attempts, NLP-recognised commands) 
+    ///so the user can review a recent activity summary on request.
     /// </summary>
     public class ActivityLog
     {
