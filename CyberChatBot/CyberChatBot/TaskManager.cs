@@ -16,19 +16,6 @@ namespace CyberChatBot
         public bool IsCompleted { get; set; }
     }
 
-    /// <summary>
-    /// Manages cybersecurity tasks using a MySQL database for persistent storage.
-    /// On startup the class ensures the database and table exist, creating them
-    /// automatically if they don't so the app works out-of-the-box.
-    /// 
-    /// HOW TO SET UP:
-    ///   1. Install MySQL Community Server (https://dev.mysql.com/downloads/mysql/)
-    ///      and make sure it is running on localhost:3306.
-    ///   2. The default root password below is empty string — change it to match
-    ///      yours, OR create a dedicated user (see comment on ConnectionString).
-    ///   3. Build the project once; NuGet will pull in MySql.Data automatically.
-    ///   4. Run the app — the database and table are created for you on first launch.
-    /// </summary>
     public class TaskManager
     {
         // ──────────────────────────────────────────────────────────────
@@ -40,7 +27,7 @@ namespace CyberChatBot
         private const string Port = "3306";
         private const string Database = "cyberchatbot_db";
         private const string User = "root";
-        private const string Password = "1234";   // ← put your MySQL root password here
+        private const string Password = "1234";
 
         private string ConnectionString =>
             $"Server={Server};Port={Port};Database={Database};Uid={User};Pwd={Password};CharSet=utf8mb4;";
