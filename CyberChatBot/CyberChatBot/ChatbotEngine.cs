@@ -7,9 +7,8 @@ using System.Threading.Tasks;
 namespace CyberChatBot
 {
     /// <summary>
-    /// Core chatbot engine for Part 2.
-    /// Implements keyword recognition, random responses, memory, 
-    /// sentiment detection, conversation flow, and error handling.
+    /// Core chatbot engine from Part 2.
+    /// Implements keyword recognition, random responses, memory, sentiment detection, conversation flow, and error handling.
     /// </summary>
     public class ChatbotEngine
     {
@@ -142,8 +141,8 @@ namespace CyberChatBot
             string userName = Recall("name") ?? "there";
 
             // ── Part 3 — NLP-driven intents (tasks, quiz, activity log) ──
-            // Checked first so these new features take priority; falls through
-            // to the original Part 1/2 logic below if no intent is matched.
+            // Checked first so these new features take priority; falls through to the original Part 1 and 2 logic below if no intent is matched.
+            
             string featureResponse = HandleFeatureIntent(userInput, userName);
             if (featureResponse != null)
                 return featureResponse;
@@ -255,8 +254,7 @@ namespace CyberChatBot
         /// Interprets the raw input via NlpHelper and, if a Part 3 feature
         /// intent is recognised (task management, quiz, activity log),
         /// performs the corresponding action and returns the chatbot's reply.
-        /// Returns null if no Part 3 intent was matched, signalling the
-        /// caller to fall back to the original Part 1/2 response logic.
+        /// Returns null if no Part 3 intent was matched, signalling the caller to fall back to the original Part 1 and 2 response logic.
         /// </summary>
         private string HandleFeatureIntent(string rawInput, string userName)
         {
@@ -395,8 +393,7 @@ namespace CyberChatBot
         }
 
         /// <summary>
-        /// Called by MainWindow when the quiz panel finishes, so the engine
-        /// can log the result and exit "quiz mode".
+        /// Called by MainWindow when the quiz panel finishes, so the engine can log the result and exit "quiz mode".
         /// </summary>
         public string FinishQuiz()
         {
