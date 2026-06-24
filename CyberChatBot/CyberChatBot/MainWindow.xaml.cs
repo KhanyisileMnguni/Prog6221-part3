@@ -10,8 +10,7 @@ namespace CyberChatBot
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml.
-    /// Handles all UI events, chat bubble rendering, ASCII art display,
-    /// voice greeting playback, and wires user input into ChatbotEngine.
+    /// Handles all UI events, chat bubble rendering, ASCII art display, voice greeting playback, and wires user input into ChatbotEngine.
     /// </summary>
     public partial class MainWindow : Window
     {
@@ -73,8 +72,7 @@ namespace CyberChatBot
         // ─────────────────────────────────────────────
 
         /// <summary>
-        /// Handles the Enter key press on the name input field,
-        /// triggering the same action as clicking the Start Chat button.
+        /// Handles the Enter key press on the name input field, triggering the same action as clicking the Start Chat button.
         /// </summary>
         public void NameInput_KeyDown(object sender, KeyEventArgs e)
         {
@@ -223,8 +221,7 @@ namespace CyberChatBot
         }
 
         /// <summary>
-        /// Adds a special ASCII art bubble using Courier New font so the
-        /// block characters render correctly and the logo displays as intended.
+        /// Adds a special ASCII art bubble using Courier New font so the block characters render correctly and the logo displays as intended.
         /// </summary>
         /// <param name="art">The ASCII art string to display.</param>
         public void AddAsciiMessage(string art)
@@ -421,8 +418,8 @@ namespace CyberChatBot
         }
 
         /// <summary>
-        /// Handles the user selecting an answer: locks the options, shows
-        /// correct/incorrect feedback with the explanation, and reveals Next.
+        /// Handles the user selecting an answer: locks the options,
+        /// shows correct/incorrect feedback with the explanation, and reveals Next.
         /// </summary>
         private void OnQuizOptionSelected(int chosenIndex, Button clickedButton, int correctIndex)
         {
@@ -499,8 +496,7 @@ namespace CyberChatBot
         // ─────────────────────────────────────────────
 
         /// <summary>
-        /// Opens the tasks overlay and renders all current tasks with
-        /// complete/delete buttons.
+        /// Opens the tasks overlay and renders all current tasks with complete/delete buttons.
         /// </summary>
         public void TasksButton_Click(object sender, RoutedEventArgs e)
         {
