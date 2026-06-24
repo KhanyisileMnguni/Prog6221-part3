@@ -1,0 +1,169 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\mngun\\source\\repos\\CyberChatBot\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC25826-0579-4CA9-9912-2E17F1D39C63}|CyberChatBot\\CyberChatBot.csproj|c:\\users\\mngun\\source\\repos\\cyberchatbot\\cyberchatbot\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FC25826-0579-4CA9-9912-2E17F1D39C63}|CyberChatBot\\CyberChatBot.csproj|solutionrelative:cyberchatbot\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC25826-0579-4CA9-9912-2E17F1D39C63}|CyberChatBot\\CyberChatBot.csproj|c:\\users\\mngun\\source\\repos\\cyberchatbot\\cyberchatbot\\chatbotengine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FC25826-0579-4CA9-9912-2E17F1D39C63}|CyberChatBot\\CyberChatBot.csproj|solutionrelative:cyberchatbot\\chatbotengine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC25826-0579-4CA9-9912-2E17F1D39C63}|CyberChatBot\\CyberChatBot.csproj|c:\\users\\mngun\\source\\repos\\cyberchatbot\\cyberchatbot\\nlphelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FC25826-0579-4CA9-9912-2E17F1D39C63}|CyberChatBot\\CyberChatBot.csproj|solutionrelative:cyberchatbot\\nlphelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC25826-0579-4CA9-9912-2E17F1D39C63}|CyberChatBot\\CyberChatBot.csproj|c:\\users\\mngun\\source\\repos\\cyberchatbot\\cyberchatbot\\quizengine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FC25826-0579-4CA9-9912-2E17F1D39C63}|CyberChatBot\\CyberChatBot.csproj|solutionrelative:cyberchatbot\\quizengine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC25826-0579-4CA9-9912-2E17F1D39C63}|CyberChatBot\\CyberChatBot.csproj|c:\\users\\mngun\\source\\repos\\cyberchatbot\\cyberchatbot\\activitylog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FC25826-0579-4CA9-9912-2E17F1D39C63}|CyberChatBot\\CyberChatBot.csproj|solutionrelative:cyberchatbot\\activitylog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC25826-0579-4CA9-9912-2E17F1D39C63}|CyberChatBot\\CyberChatBot.csproj|c:\\users\\mngun\\source\\repos\\cyberchatbot\\cyberchatbot\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{6FC25826-0579-4CA9-9912-2E17F1D39C63}|CyberChatBot\\CyberChatBot.csproj|solutionrelative:cyberchatbot\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC25826-0579-4CA9-9912-2E17F1D39C63}|CyberChatBot\\CyberChatBot.csproj|c:\\users\\mngun\\source\\repos\\cyberchatbot\\cyberchatbot\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FC25826-0579-4CA9-9912-2E17F1D39C63}|CyberChatBot\\CyberChatBot.csproj|solutionrelative:cyberchatbot\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC25826-0579-4CA9-9912-2E17F1D39C63}|CyberChatBot\\CyberChatBot.csproj|c:\\users\\mngun\\source\\repos\\cyberchatbot\\cyberchatbot\\taskmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FC25826-0579-4CA9-9912-2E17F1D39C63}|CyberChatBot\\CyberChatBot.csproj|solutionrelative:cyberchatbot\\taskmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\mngun\\source\\repos\\CyberChatBot\\CyberChatBot\\App.xaml.cs",
+              "RelativeDocumentMoniker": "CyberChatBot\\App.xaml.cs",
+              "ToolTip": "C:\\Users\\mngun\\source\\repos\\CyberChatBot\\CyberChatBot\\App.xaml.cs",
+              "RelativeToolTip": "CyberChatBot\\App.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-24T09:48:53.258Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "TaskManager.cs",
+              "DocumentMoniker": "C:\\Users\\mngun\\source\\repos\\CyberChatBot\\CyberChatBot\\TaskManager.cs",
+              "RelativeDocumentMoniker": "CyberChatBot\\TaskManager.cs",
+              "ToolTip": "C:\\Users\\mngun\\source\\repos\\CyberChatBot\\CyberChatBot\\TaskManager.cs",
+              "RelativeToolTip": "CyberChatBot\\TaskManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-24T10:27:38.626Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ChatbotEngine.cs",
+              "DocumentMoniker": "C:\\Users\\mngun\\source\\repos\\CyberChatBot\\CyberChatBot\\ChatbotEngine.cs",
+              "RelativeDocumentMoniker": "CyberChatBot\\ChatbotEngine.cs",
+              "ToolTip": "C:\\Users\\mngun\\source\\repos\\CyberChatBot\\CyberChatBot\\ChatbotEngine.cs",
+              "RelativeToolTip": "CyberChatBot\\ChatbotEngine.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJgBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-24T09:47:04.263Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "NlpHelper.cs",
+              "DocumentMoniker": "C:\\Users\\mngun\\source\\repos\\CyberChatBot\\CyberChatBot\\NlpHelper.cs",
+              "RelativeDocumentMoniker": "CyberChatBot\\NlpHelper.cs",
+              "ToolTip": "C:\\Users\\mngun\\source\\repos\\CyberChatBot\\CyberChatBot\\NlpHelper.cs",
+              "RelativeToolTip": "CyberChatBot\\NlpHelper.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAswPUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-24T09:46:30.318Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "QuizEngine.cs",
+              "DocumentMoniker": "C:\\Users\\mngun\\source\\repos\\CyberChatBot\\CyberChatBot\\QuizEngine.cs",
+              "RelativeDocumentMoniker": "CyberChatBot\\QuizEngine.cs",
+              "ToolTip": "C:\\Users\\mngun\\source\\repos\\CyberChatBot\\CyberChatBot\\QuizEngine.cs",
+              "RelativeToolTip": "CyberChatBot\\QuizEngine.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAswA8AAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-24T09:45:57.081Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ActivityLog.cs",
+              "DocumentMoniker": "C:\\Users\\mngun\\source\\repos\\CyberChatBot\\CyberChatBot\\ActivityLog.cs",
+              "RelativeDocumentMoniker": "CyberChatBot\\ActivityLog.cs",
+              "ToolTip": "C:\\Users\\mngun\\source\\repos\\CyberChatBot\\CyberChatBot\\ActivityLog.cs",
+              "RelativeToolTip": "CyberChatBot\\ActivityLog.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-24T09:45:19.904Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\mngun\\source\\repos\\CyberChatBot\\CyberChatBot\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "CyberChatBot\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\mngun\\source\\repos\\CyberChatBot\\CyberChatBot\\MainWindow.xaml",
+              "RelativeToolTip": "CyberChatBot\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-06-24T09:42:42.404Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\mngun\\source\\repos\\CyberChatBot\\CyberChatBot\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "CyberChatBot\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\mngun\\source\\repos\\CyberChatBot\\CyberChatBot\\MainWindow.xaml.cs",
+              "RelativeToolTip": "CyberChatBot\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-24T09:42:41.423Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
