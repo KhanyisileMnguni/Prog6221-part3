@@ -1,0 +1,191 @@
+# CyberChatBot — Cybersecurity Awareness Bot
+
+A WPF desktop application built in C# (.NET Framework 4.7.2) that serves as an interactive cybersecurity awareness assistant.
+The bot helps users stay safe online through guided chat, a task management system backed by MySQL, a cybersecurity quiz, 
+NLP-simulated intent recognition, and a full activity log.
+
+---
+
+## Project Description
+
+CyberChatBot is a multi-part portfolio project (Parts 1, 2, and 3) combining:
+- A conversational chatbot with keyword recognition, sentiment detection, and memory
+- A task assistant that stores and manages cybersecurity to-do items in a MySQL database
+- A cybersecurity mini-game/quiz with 12 questions, immediate feedback, and scoring
+- A Natural Language Processing (NLP) simulation that understands varied user phrasing
+- An activity log that records every significant action the bot performs
+
+---
+
+## Software Required
+
+| Software | Version | Download |
+|---|---|---|
+| Visual Studio | 2022 (Community or higher) | https://visualstudio.microsoft.com/ |
+| .NET Framework | 4.7.2 | Included with Visual Studio |
+| MySQL Community Server | 8.0+ | https://dev.mysql.com/downloads/mysql/ |
+| MySql.Data NuGet Package | 8.3.0 | Installed via NuGet (see below) |
+
+---
+
+## How to Open and Run the Project
+
+1. Clone or download this repository to your local machine.
+2. Open `CyberChatBot.slnx` in Visual Studio 2022.
+3. Right-click the solution in Solution Explorer → **Restore NuGet Packages** (this installs `MySql.Data 8.3.0` automatically).
+4. Ensure MySQL Server is running on your machine (see Database Setup below).
+5. Open `TaskManager.cs` and set your MySQL root password on this line:
+   ```csharp
+   private const string Password = ""; // ← your password here
+   ```
+6. Press **Ctrl + Shift + B** to build the project.
+7. Press **F5** to run.
+
+> **Note:** The WAV voice greeting file path in `MainWindow.xaml.cs` is set to a local machine path. If you are running the project on a different machine, either update the path or the app will silently skip the greeting and continue normally.
+
+---
+
+## Database Setup Instructions
+
+CyberChatBot uses **MySQL** to store tasks persistently. The database and table are created **automatically** on first launch — you do not need to run any SQL manually.
+
+### Prerequisites
+- MySQL Community Server 8.0+ must be installed and running on `localhost:3306`
+- The default root user must exist
+
+### What gets created automatically
+```
+Database: cyberchatbot_db
+Table:    Tasks (Id, Title, Description, ReminderDate, IsCompleted, CreatedAt)
+```
+
+### To verify the database was created
+Open MySQL Command Line Client and run:
+```sql
+USE cyberchatbot_db;
+SHOW TABLES;
+SELECT * FROM tasks;
+```
+
+### Connection details (configurable in TaskManager.cs)
+```
+Server:   localhost
+Port:     3306
+Database: cyberchatbot_db
+User:     root
+Password: (your MySQL root password)
+```
+
+---
+
+## How to Use the Task Assistant
+
+The Task Assistant lets you manage cybersecurity-related to-do items. All tasks are saved to the MySQL database and persist between sessions.
+
+**Via chat (NLP):**
+| What you type | What happens |
+|---|---|
+| `Add a task to enable two-factor authentication` | Adds a new task |
+| `Add task - Review privacy settings` | Adds a new task |
+| `Remind me to update my password in 3 days` | Adds task with a 3-day reminder |
+| `Remind me in 7 days` | Sets reminder on the most recent task |
+| `Show my tasks` | Lists all tasks with status |
+| `Complete task 2` | Marks task #2 as done |
+| `Delete task 3` | Removes task #3 |
+
+**Via the Tasks button:**
+Click the **Tasks** button in the toolbar to open the full task panel, where you can view all tasks, mark them complete, or delete them with one click.
+
+---
+
+## How to Access the Quiz / Mini-Game
+
+**Via chat:**
+Type any of the following:
+- `Start quiz`
+- `Quiz me`
+- `Test my knowledge`
+- `Play game`
+
+**Via button:**
+Click the **Quiz** button in the toolbar.
+
+The quiz contains **12 cybersecurity questions** covering phishing, password safety, safe browsing, social engineering, two-factor authentication, malware, and online scams. Questions are a mix of multiple-choice and true/false. After each answer you receive immediate feedback with an explanation. Your score is tracked throughout and a final result with personalised feedback is shown at the end.
+
+---
+
+## How to Test the NLP Simulation
+
+The chatbot uses keyword detection, `string.Contains()`, and regular expressions to understand varied phrasing. You do not need to use exact commands.
+
+**Examples to try:**
+```
+"Can you remind me to enable 2FA?"
+"I need to check my privacy settings"
+"What have you done for me?"
+"Show activity log"
+"Show my recent actions"
+"I want to add a new task"
+"Create a task to backup my files"
+"Show full log"
+"Show more"
+```
+
+The bot also understands cybersecurity topic questions like:
+```
+"Tell me about phishing"
+"What should I know about passwords?"
+"Explain social engineering"
+"I'm worried about malware"
+```
+
+---
+
+## How to View the Activity Log
+
+The activity log records every significant action the bot performs, with timestamps.
+
+**Via chat:**
+- `Show activity log` — shows the 10 most recent actions
+- `What have you done for me?` — same as above
+- `Show recent actions` — same as above
+- `Show full log` / `Show more` / `Show everything` — shows the complete history
+
+**What gets logged:**
+- Tasks added (with or without reminders)
+- Reminders set
+- Tasks marked as completed
+- Tasks deleted
+- Quiz started
+- Quiz completed (with score)
+- NLP-recognised commands
+
+---
+
+## Login Details / Important Notes
+
+- **No login required** — the app starts with a name entry screen
+- **MySQL password** — must be set in `TaskManager.cs` before building if you have a root password
+- **Voice greeting** — the WAV file path in `MainWindow.xaml.cs` is hardcoded to the original developer's machine path; update or ignore this if running elsewhere
+- **Database auto-creation** — no manual SQL setup needed; the app handles it on first run
+- **Session memory** — the bot remembers your name and favourite topic within a session, but the activity log resets when the app closes (tasks persist in the database)
+
+---
+
+## Project Structure
+
+```
+CyberChatBot/
+App.xaml                  # Application entry point and resource definitions
+App.xaml.cs               # App startup logic
+MainWindow.xaml           # Full GUI layout (XAML)
+MainWindow.xaml.cs        # UI event handling, bubble rendering, quiz/task panels
+ChatbotEngine.cs          # Core chatbot logic (keywords, sentiment, memory, NLP routing)
+TaskManager.cs            # MySQL database integration for task CRUD operations
+QuizEngine.cs             # Quiz question bank, scoring, and feedback logic
+NlpHelper.cs              # Intent detection via keyword matching and regex
+ActivityLog.cs            # In-session activity tracking with timestamps
+App.config                # .NET runtime configuration
+packages.config           # NuGet package references (MySql.Data 8.3.0)
+CyberChatBot.csproj       # Project file
+```
