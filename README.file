@@ -41,13 +41,15 @@ CyberChatBot is a multi-part portfolio project (Parts 1, 2, and 3) combining:
 6. Press **Ctrl + Shift + B** to build the project.
 7. Press **F5** to run.
 
-> **Note:** The WAV voice greeting file path in `MainWindow.xaml.cs` is set to a local machine path. If you are running the project on a different machine, either update the path or the app will silently skip the greeting and continue normally.
+> **Note:** The WAV voice greeting file path in `MainWindow.xaml.cs` is set to a local machine path. 
+If you are running the project on a different machine, either update the path or the app will silently skip the greeting and continue normally.
 
 ---
 
 ## Database Setup Instructions
 
-CyberChatBot uses **MySQL** to store tasks persistently. The database and table are created **automatically** on first launch — you do not need to run any SQL manually.
+CyberChatBot uses **MySQL** to store tasks persistently. 
+The database and table are created **automatically** on first launch — you do not need to run any SQL manually.
 
 ### Prerequisites
 - MySQL Community Server 8.0+ must be installed and running on `localhost:3306`
@@ -110,7 +112,9 @@ Type any of the following:
 **Via button:**
 Click the **Quiz** button in the toolbar.
 
-The quiz contains **12 cybersecurity questions** covering phishing, password safety, safe browsing, social engineering, two-factor authentication, malware, and online scams. Questions are a mix of multiple-choice and true/false. After each answer you receive immediate feedback with an explanation. Your score is tracked throughout and a final result with personalised feedback is shown at the end.
+The quiz contains **12 cybersecurity questions** covering phishing, password safety, safe browsing, social engineering, two-factor authentication, malware, and online scams.
+Questions are a mix of multiple-choice and true/false. After each answer you receive immediate feedback with an explanation.
+Your score is tracked throughout and a final result with personalised feedback is shown at the end.
 
 ---
 
