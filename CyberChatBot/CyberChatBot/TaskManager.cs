@@ -18,11 +18,6 @@ namespace CyberChatBot
 
     public class TaskManager
     {
-        // ──────────────────────────────────────────────────────────────
-        //  Connection string
-        //  Change "root" / "YourPasswordHere" to match your MySQL setup.
-        //  If you created a dedicated user, replace them accordingly.
-        // ──────────────────────────────────────────────────────────────
         private const string Server = "localhost";
         private const string Port = "3306";
         private const string Database = "cyberchatbot_db";
